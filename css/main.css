@@ -1,0 +1,459 @@
+/*=============== UNIVERSAL ===============*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  /*=============== Scrollbar ===============*/
+  scrollbar-width: auto;
+  font-family: "Nunito", sans-serif;
+  scrollbar-color: rgb(97, 155, 151) #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(97, 155, 151);
+  border: 0px solid #fff;
+  border-radius: 0px;
+}
+
+::-moz-selection {
+  background: rgba(97, 155, 151, 0.7);
+}
+
+::selection {
+  background: rgba(97, 155, 151, 0.7);
+}
+
+/*=============== Text ===============*/
+h1,
+h2 {
+  font-family: "Jost", sans-serif;
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+/*=============== Navbar ===============*/
+nav {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(24, 26, 24, 0.1);
+}
+
+.nav__link {
+  color: rgb(24, 26, 24);
+  display: inline-block;
+  font-size: 1.3rem;
+  position: relative;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: rgb(97, 155, 151);
+}
+.nav__link:after {
+  background-color: rgb(97, 155, 151);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+  width: 100%;
+}
+.nav__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+/* Search box */
+.search-box {
+  background: rgb(97, 155, 151);
+  border-radius: 50px;
+  height: 40px;
+  padding: 10px;
+}
+.search-box__btn {
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  height: 20px;
+  width: 20px;
+}
+.search-box__input {
+  background: none;
+  border: none;
+  color: #fff;
+  float: left;
+  outline: none;
+  padding: 0;
+  transition: 0.3s;
+  width: 0;
+}
+.search-box__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.search-box__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box__input:not(:-moz-placeholder-shown) {
+  padding: 0 6px;
+  width: 180px;
+}
+
+.search-box__input:focus,
+.search-box__input:not(:placeholder-shown),
+.search-box:hover > .search-box__input {
+  padding: 0 6px;
+  width: 180px;
+}
+
+/*=============== Footer ===============*/
+footer .icon-tabler {
+  transition: 0.3s;
+}
+footer .icon-tabler:hover {
+  stroke: rgb(97, 155, 151);
+}
+
+/*=============== Scroll to top btn ===============*/
+.btn__top {
+  background-color: rgb(97, 155, 151);
+  border: none;
+  border-radius: 100%;
+  bottom: 22px;
+  padding: 1px;
+  position: fixed;
+  right: 22px;
+}
+
+/*=============== HOME ===============*/
+/*=============== Carousel ===============*/
+.carousel {
+  box-shadow: 0px 5px 20px rgba(24, 26, 24, 0.1);
+}
+.carousel .carousel-indicators button {
+  border-radius: 100%;
+  height: 7px;
+  width: 7px;
+}
+
+/*=============== Movie cards ===============*/
+.card {
+  align-items: flex-start;
+  box-shadow: 0px 5px 20px rgba(24, 26, 24, 0.1);
+  display: flex;
+  font-weight: 500;
+  justify-content: end;
+  margin: 10px;
+  transition: 0.4s;
+  width: 16rem;
+}
+.card:hover {
+  transform: translateY(2%);
+}
+.card:hover .card__info {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: 2;
+  border-radius: 6px;
+}
+.card:hover:before {
+  background-color: rgba(24, 26, 24, 0.35);
+}
+.card__info {
+  color: #fff;
+  display: block;
+  opacity: 0;
+  padding: 0px 25px;
+  position: absolute;
+  transform: translateY(20%);
+  transition: 0.5s;
+  width: 100%;
+  z-index: 3;
+}
+.card__title {
+  font-size: 1.2rem;
+}
+.card__button {
+  background: rgba(23, 26, 23, 0.8);
+  border: none;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: 0.4s;
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 100%;
+}
+.card__button:hover {
+  background: rgb(97, 155, 151);
+}
+.card__button--sm {
+  background: rgba(23, 26, 23, 0.8);
+  border: none;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: 0.4s;
+  margin-bottom: 25px;
+}
+.card__button--sm:hover {
+  background: rgb(97, 155, 151);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .card {
+    width: 22rem;
+  }
+}
+.is-hidden {
+  display: none;
+}
+
+/*=============== Modal ===============*/
+.modal {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-content {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(24, 26, 24, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.modal__button {
+  background: rgba(23, 26, 23, 0.8);
+  border: none;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: 0.4s;
+}
+.modal__button:hover {
+  background: rgb(97, 155, 151);
+}
+
+.dropdown-menu {
+  min-width: inherit;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background: rgb(97, 155, 151);
+  color: rgb(255, 255, 255);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+#modalKiki {
+  background-image: url("../img/home/modal/modal-kiki.jpg");
+}
+#modalSpiritedAway {
+  background-image: url("../img/home/modal/modal-spiritedaway.jpg");
+}
+#modalHowl {
+  background-image: url("../img/home/modal/modal-howl.jpg");
+}
+#modalTotoro {
+  background-image: url("../img/home/modal/modal-totoro.jpg");
+}
+#modalTheWindRises {
+  background-image: url("../img/home/modal/modal-thewindrises.jpg");
+}
+#modalMononoke {
+  background-image: url("../img/home/modal/modal-mononoke.jpg");
+}
+#modalMarnie {
+  background-image: url("../img/home/modal/modal-marnie.jpg");
+}
+#modalKaguya {
+  background-image: url("../img/home/modal/modal-kaguya.jpg");
+}
+#modalArrietty {
+  background-image: url("../img/home/modal/modal-arrietty.jpg");
+}
+#modalPonyo {
+  background-image: url("../img/home/modal/modal-ponyo.jpg");
+}
+#modalGraveFireflies {
+  background-image: url("../img/home/modal/modal-gravefireflies.jpg");
+}
+#modalTalesFromEarthsea {
+  background-image: url("../img/home/modal/modal-talesfromearthsea.jpg");
+}
+#modalWhisper {
+  background-image: url("../img/home/modal/modal-whisper.jpg");
+}
+#modalPorco {
+  background-image: url("../img/home/modal/modal-porco.jpg");
+}
+#modalOnlyYesterday {
+  background-image: url("../img/home/modal/modal-onlyyesterday.jpg");
+}
+#modalPoppyHill {
+  background-image: url("../img/home/modal/modal-poppyhill.jpg");
+}
+#modalCastleSky {
+  background-image: url("../img/home/modal/modal-castlesky.jpg");
+}
+#modalNausicaa {
+  background-image: url("../img/home/modal/modal-nausicaa.jpg");
+}
+#modalOceanWaves {
+  background-image: url("../img/home/modal/modal-oceanwaves.jpg");
+}
+#modalTheCatReturns {
+  background-image: url("../img/home/modal/modal-thecatreturns.jpg");
+}
+#modalPomPoko {
+  background-image: url("../img/home/modal/modal-pompoko.jpg");
+}
+#modalNeighborsYamadas {
+  background-image: url("../img/home/modal/modal-neighborsyamadas.jpg");
+}
+#modalEarwig {
+  background-image: url("../img/home/modal/modal-earwig.jpg");
+}
+
+@media (max-width: 425px) {
+  #modalKiki {
+    background-image: url("../img/home/modal/modal-kiki-mobile.jpg");
+  }
+  #modalSpiritedAway {
+    background-image: url("../img/home/modal/modal-spiritedaway-mobile.jpg");
+  }
+  #modalHowl {
+    background-image: url("../img/home/modal/modal-howl-mobile.jpg");
+  }
+  #modalTotoro {
+    background-image: url("../img/home/modal/modal-totoro-mobile.jpg");
+  }
+  #modalTheWindRises {
+    background-image: url("../img/home/modal/modal-thewindrises-mobile.jpg");
+  }
+  #modalMononoke {
+    background-image: url("../img/home/modal/modal-mononoke-mobile.jpg");
+  }
+  #modalMarnie {
+    background-image: url("../img/home/modal/modal-marnie-mobile.jpg");
+  }
+  #modalKaguya {
+    background-image: url("../img/home/modal/modal-kaguya-mobile.jpg");
+  }
+  #modalArrietty {
+    background-image: url("../img/home/modal/modal-arrietty-mobile.jpg");
+  }
+  #modalPonyo {
+    background-image: url("../img/home/modal/modal-ponyo-mobile.jpg");
+  }
+  #modalGraveFireflies {
+    background-image: url("../img/home/modal/modal-gravefireflies-mobile.jpg");
+  }
+  #modalTalesFromEarthsea {
+    background-image: url("../img/home/modal/modal-talesfromearthsea-mobile.jpg");
+  }
+  #modalWhisper {
+    background-image: url("../img/home/modal/modal-whisper-mobile.jpg");
+  }
+  #modalPorco {
+    background-image: url("../img/home/modal/modal-porco-mobile.jpg");
+  }
+  #modalOnlyYesterday {
+    background-image: url("../img/home/modal/modal-onlyyesterday-mobile.jpg");
+  }
+  #modalPoppyHill {
+    background-image: url("../img/home/modal/modal-poppyhill-mobile.jpg");
+  }
+  #modalCastleSky {
+    background-image: url("../img/home/modal/modal-castlesky-mobile.jpg");
+  }
+  #modalNausicaa {
+    background-image: url("../img/home/modal/modal-nausicaa-mobile.jpg");
+  }
+  #modalOceanWaves {
+    background-image: url("../img/home/modal/modal-oceanwaves-mobile.jpg");
+  }
+  #modalTheCatReturns {
+    background-image: url("../img/home/modal/modal-thecatreturns-mobile.jpg");
+  }
+  #modalPomPoko {
+    background-image: url("../img/home/modal/modal-pompoko-mobile.jpg");
+  }
+  #modalNeighborsYamadas {
+    background-image: url("../img/home/modal/modal-neighborsyamadas-mobile.jpg");
+  }
+  #modalEarwig {
+    background-image: url("../img/home/modal/modal-earwig-mobile.jpg");
+  }
+}
+/*=============== ABOUT ===============*/
+.header-img {
+  box-shadow: 0px 5px 20px rgba(24, 26, 24, 0.1);
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+.header-img__text {
+  bottom: 8px;
+  position: absolute;
+}
+
+.quote {
+  border-left: 2px solid rgb(24, 26, 24);
+  font-style: italic;
+}
+
+/*=============== CONTACT ===============*/
+.contact__input:focus, .contact__input:focus {
+  box-shadow: none;
+  border-color: rgb(97, 155, 151);
+}
+.contact__button {
+  background: rgba(23, 26, 23, 0.8);
+  border: none;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: 0.4s;
+  width: 100%;
+}
+.contact__button:hover {
+  background: rgb(97, 155, 151);
+}
+.contact .icon-tabler {
+  transition: 0.3s;
+  border: 2px solid #212529;
+}
+.contact .icon-tabler:hover {
+  stroke: rgb(97, 155, 151);
+  border: 2px solid rgb(97, 155, 151);
+}/*# sourceMappingURL=main.css.map */
