@@ -1,0 +1,4308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet" />
+
+		<title>The Studio Ghibli Collection | Home</title>
+	</head>
+
+	<body>
+		<nav class="d-flex sticky-top flex-column flex-md-row justify-content-center justify-content-md-between align-items-center py-2 px-0 px-md-5">
+			<div class="d-flex col-md-2 align-items-center">
+				<a href="index.html"><img src="img/Studio_Ghibli_logo.png" class="img-fluid" width="110" alt="Studio Ghibli logo" /></a>
+			</div>
+
+			<ul class="nav col-md-10 justify-content-center justify-content-md-end align-items-center list-unstyled">
+				<li><a href="index.html" class="nav__link mx-3 my-2">Home</a></li>
+				<li><a href="about.html" class="nav__link mx-3 my-2">About</a></li>
+				<li><a href="contact.html" class="nav__link mx-3 my-2">Contact</a></li>
+				<li class="search-box mx-3">
+					<input type="text" class="search-box__input" id="searchbox" oninput="liveSearch()" placeholder="Search" />
+					<span class="search-box__btn"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-search"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#ffffff"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<circle cx="10" cy="10" r="7" />
+							<line x1="21" y1="21" x2="15" y2="15" /></svg
+					></span>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/home/carousel/carousel-0.jpg" class="d-block w-100" alt="Spirited Away" />
+						<img src="img/home/carousel/carousel-0-mobile.jpg" class="d-block w-100" alt="Spirited Away" />
+					</picture>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Spirited Away</h5>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<picture>
+						<source
+							media="(min-width: 768px)"
+							srcset="img/home/carousel/carousel-1.jpg"
+							class="d-block w-100"
+							alt="Howl's Moving Castle"
+						/>
+						<img src="img/home/carousel/carousel-1-mobile.jpg" class="d-block w-100" alt="Howl's Moving Castle" />
+					</picture>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Howl's Moving Castle</h5>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/home/carousel/carousel-2.jpg" class="d-block w-100" alt="Castle in the Sky" />
+						<img src="img/home/carousel/carousel-2-mobile.jpg" class="d-block w-100" alt="Castle in the Sky" />
+					</picture>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Castle in the Sky</h5>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="carousel-control-prev" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button type="button" class="carousel-control-next" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<main class="mx-lg-5 mx-3 px-md-5 pt-4 pb-1">
+			<h1>Movies</h1>
+			<div class="d-flex justify-content-center flex-wrap">
+				<!---------- Kiki's Delivery Service ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-kiki.jpg" class="card-img" alt="Kiki's Delivery Service poster" />
+					<div class="card__info">
+						<p class="card__title">Kiki's Delivery Service</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalKiki">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalKiki" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Kiki's Delivery Service</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 魔女の宅急便<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1989
+								</p>
+								<p>
+									Kiki is thirteen years old, right at the age when a young witch in training is supposed to travel to another city
+									and strike out for herself. It's a real test of responsibility and independence, and if Kiki can handle it for a
+									year, she'll be ready to undergo the rest of her education.
+								</p>
+								<p>
+									So, with only a little money, her pet cat/confidante Jiji, and her mother's broom, Kiki makes her way to a big
+									city by the sea, where witches haven't been seen for years and the demand for them isn't exactly great. Being
+									resourceful, Kiki starts the kind of business most suitable for a witch who can fly on a broom: an airborne
+									package delivery service.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0097814/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Kikis_Delivery_Service"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/60027106">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/kikis-delivery-service.2oj2/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=4bG17OYs-GA"
+													>Trailer</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Spirited Away ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-spiritedaway.jpg" class="card-img" alt="Spirited Away poster" />
+					<div class="card__info">
+						<p class="card__title">Spirited Away</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalSpiritedAway">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalSpiritedAway" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Spirited Away</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 千と千尋の神隠し<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 2001
+								</p>
+								<p>
+									Ten-year-old Chihiro and her parents end up at an abandoned amusement park inhabited by supernatural beings. Soon,
+									she learns that she must work to free her parents who have been turned into pigs.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0245429/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Spirited_Away"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/60023642">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/spirited-away.w48o/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/CHCUkXUPkFM">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Howl's Moving Castle ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-howl.jpg" class="card-img" alt="Howl's Moving Castle poster" />
+					<div class="card__info">
+						<p class="card__title">Howl's Moving Castle</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalHowl">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalHowl" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Howl's Moving Castle</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> ハウルの動く城<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 2004
+								</p>
+								<p>
+									A plain young hatter named Sophie has her life changed when a witch transforms her into an old woman. Unable to
+									face her family in such a condition, Sophie runs away in search of a way to become young again. Along the way,
+									Sophie helps a turnip headed scarecrow, who repays her by leading her to the moving castle owned by the dreaded
+									wizard Howl. There she befriends Howl's apprentice Markl, Howl's fire demon Calcifer, and eventually, Howl
+									himself. Sophie then becomes the castle's cleaning lady in an effort to not only find the solution to her problem
+									but to save Howl from his own terrible secrets as well.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0347149/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Howls_Moving_Castle"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70028883">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/howls-moving-castle.ll26/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/iwROgK94zcM">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- My Neighbor Totoro ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-totoro.jpg" class="card-img" alt="My Neighbor Totoro poster" />
+					<div class="card__info">
+						<p class="card__title">My Neighbor Totoro</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalTotoro">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalTotoro" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">My Neighbor Totoro</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> となりのトトロ<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1988
+								</p>
+								<p>
+									Mei and Satsuki shift to a new house to be closer to their mother who is in the hospital. They soon become friends
+									with Totoro, a giant rabbit-like creature who is a spirit.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0096283/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/My_Neighbor_Totoro"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/60032294">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/my-neighbor-totoro.1n3p/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/92a7Hj0ijLs">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- The Wind Rises ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-thewindrises.jpg" class="card-img" alt="The Wind Rises poster" />
+					<div class="card__info">
+						<p class="card__title">The Wind Rises</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalTheWindRises">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalTheWindRises" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">The Wind Rises</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 風立ちぬ<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 2013
+								</p>
+								<p>
+									Jiro dreams of flying and designing beautiful airplanes. Nearsighted from a young age and thus unable to become a
+									pilot, he joins the aircraft division of a major Japanese engineering company in 1927. His genius is soon
+									recognized, and becomes one of the world's most accomplished airplane designers.
+								</p>
+								<p>
+									'The Wind Rises' chronicles his life and the key historical events that affected it - The Great Kanto Earthquake
+									of 1923, The Great Depression, the tuberculosis epidemic, and Japan's plunge into war. Jiro meets and falls in
+									love with Nahoko, develops and cherishes his friendship with his colleague Honjo, and innovates tremendously,
+									leading the aviation world into the future.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt2013293/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Crunchyroll</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70293674">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/the-wind-rises.no4l/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/PhHoCnRg1Yw">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Princess Mononoke ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-mononoke.jpg" class="card-img" alt="Princess Mononoke poster" />
+					<div class="card__info">
+						<p class="card__title">Princess Mononoke</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalMononoke">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalMononoke" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Princess Mononoke</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> もののけ姫<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1997
+								</p>
+								<p>
+									While fighting to save his village from the attack of a demon-god, Ashitaka comes in contact with it and is
+									inflicted with a deadly curse. In his search for a cure he is forced to leave his village forever and journey to
+									the forest inhabited by animal gods. There, he finds himself in the middle of a war between the forest gods and a
+									village led by Lady Eboshi.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0119698/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Princess_Mononoke"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/28630857">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/princess-mononoke.yk8x/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/4OiMOHRDs14">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- When Marnie Was There ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-marnie.jpg" class="card-img" alt="When Marnie Was There poster" />
+					<div class="card__info">
+						<p class="card__title">When Marnie Was There</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalMarnie">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalMarnie" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">When Marnie Was There</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 思い出のマーニー<br />
+									<b>Director:</b> Hiromasa Yonebayashi<br />
+									<b>Year:</b> 2014
+								</p>
+								<p>
+									A young girl is sent to the country for health reasons, where she meets an unlikely friend in the form of Marnie,
+									a young girl with flowing blonde hair. As the friendship unravels Marnie has closer ties to the protagonist than
+									we might expect.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt3398268/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Crunchyroll</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/80036398">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/when-marnie-was-there.vv0l/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/jjmrxqcQdYg">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- The Tale of The Princess Kaguya ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-kaguya.jpg" class="card-img" alt="The Tale of The Princess Kaguya poster" />
+					<div class="card__info">
+						<p class="card__title">The Tale of The Princess Kaguya</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalKaguya">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalKaguya" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">The Tale of The Princess Kaguya</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> かぐや姫の物語<br />
+									<b>Director:</b> Isao Takahata<br />
+									<b>Year:</b> 2013
+								</p>
+								<p>
+									Deep in the countryside, Okina works as a bamboo cutter in a forest, chopping away at the hollow plants day after
+									day. One day, he discovers a small baby inside a glowing shoot. He immediately takes her home, convinced that she
+									is a princess sent to Earth as a divine blessing from heaven. Okina and his wife Ouna take it upon themselves to
+									raise the infant as their own, watching over her as she quickly grows into an energetic young girl.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt2576852/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Crunchyroll</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/80013552">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/the-tale-of-the-princess-kaguya.qx3j/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/W71mtorCZDw">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- The Secret World of Arrietty ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-arrietty.jpg" class="card-img" alt="The Secret World of Arrietty poster" />
+					<div class="card__info">
+						<p class="card__title">The Secret World of Arrietty</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalArrietty">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalArrietty" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">The Secret World of Arrietty</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 借りぐらしのアリエッティ<br />
+									<b>Director:</b> Hiromasa Yonebayashi<br />
+									<b>Year:</b> 2010
+								</p>
+								<p>
+									The Clock family are four-inch-tall people who live anonymously in another family's residence, borrowing simple
+									items to make their home. Life changes for the Clocks when their daughter, Arrietty, is discovered.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt1568921/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Arrietty_the_Borrower"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70216227">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/the-secret-world-of-arrietty.oj05/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/VlMe7PavaRQ">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Ponyo ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-ponyo.jpg" class="card-img" alt="Ponyo poster" />
+					<div class="card__info">
+						<p class="card__title">Ponyo</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalPonyo">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalPonyo" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Ponyo</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 崖の上のポニョ<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 2008
+								</p>
+								<p>
+									A goldfish sneaks away from home and floats off on the back of a jellyfish. After getting stuck in a glass jar,
+									she drifts to the shore where she is freed by Sousuke, a five-year-old boy who lives with his mother in a house by
+									the sea. After healing a cut on Sousuke's finger by licking it, the goldfish is named Ponyo by her new friend.
+									Unknown to Sousuke, Ponyo already has a name and a family. Her father Fujimoto, a sorcerer who forsook his
+									humanity to live underwater, searches frantically for his daughter Brunhilde.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0876563/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Ponyo_on_the_Cliff_by_the_Sea"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70106454">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/ponyo.n30m/ep-full">9anime</a>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/pfGDfDjAdSE">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Grave of the Fireflies ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-graveofthefireflies.jpg" class="card-img" alt="Grave of the Fireflies poster" />
+					<div class="card__info">
+						<p class="card__title">Grave of the Fireflies</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalGraveFireflies">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalGraveFireflies" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Grave of the Fireflies</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 火垂るの墓<br />
+									<b>Director:</b> Isao Takahata<br />
+									<b>Year:</b> 1988
+								</p>
+								<p>
+									A Japanese boy of 14 and his 4 year old sister attempt to seek refuge from the atrocities of World War II. Seita
+									and Setsuko flee their disheveled home and deceased parents to make their bid for a new life. Before American
+									troops begin to occupy their country, the children resort to dwelling in an abandoned bomb shelter in the
+									countryside. Though these siblings later get a sense of safety, they realize necessities such as food and water
+									will not be easy to come by.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0095327/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Grave_of_the_Fireflies"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/grave-of-the-fireflies.0235/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/4vPeTSRd580">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Tales from Earthsea ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-talesfromearthsea.jpg" class="card-img" alt="Tales from Earthsea poster" />
+					<div class="card__info">
+						<p class="card__title">Tales from Earthsea</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalTalesFromEarthsea">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalTalesFromEarthsea" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Tales from Earthsea</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> ゲド戦記<br />
+									<b>Director:</b> Goro Miyazaki<br />
+									<b>Year:</b> 2006
+								</p>
+								<p>
+									In the land of Earthsea, a mysterious force threatens to plunge humanity into destruction and chaos. A powerful
+									wizard named Sparrowhawk seeks the source of his world's imbalance, and along the way rescues a runaway prince
+									named Arren. When Sparrowhawk's powers begin to weaken, he and Arren must join forces with a former priestess and
+									her daughter to defeat an evil foe whose quest for immortality will destroy Earthsea.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0495596/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Ged_Senki_Tales_from_Earthsea_-_Movie"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70142821">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/tales-from-earthsea.m288/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/8hxYx3Jq3kI">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Whisper of the Heart ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-whisperoftheheart.jpg" class="card-img" alt="Whisper of the Heart poster" />
+					<div class="card__info">
+						<p class="card__title">Whisper of the Heart</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalWhisper">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalWhisper" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Whisper of the Heart</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 耳をすませば<br />
+									<b>Director:</b> Yoshifumi Kondō<br />
+									<b>Year:</b> 2006
+								</p>
+								<p>
+									This animated film follows Shizuku, an inquisitive young girl and a voracious reader, who longs to be a writer
+									when she grows up. One day she notices that all of her library books have previously been taken out by one Seiji
+									Amasawa. Amid chasing after a large cat, befriending an eccentric antiques dealer and writing her first novel,
+									Shizuku aims to find this mysterious boy who may well be her soul mate.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0113824/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Whisper_of_the_Heart"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70045021">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/whisper-of-the-heart.7jo1/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/0pVkiod6V0U">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Porco Rosso ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-porcorosso.jpg" class="card-img" alt="Porco Rosso poster" />
+					<div class="card__info">
+						<p class="card__title">Porco Rosso</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalPorco">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalPorco" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Porco Rosso</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 紅の豚<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1992
+								</p>
+								<p>
+									In Italy in the 1930s, sky pirates in biplanes terrorize wealthy cruise ships as they sail the Adriatic Sea. The
+									only pilot brave enough to stop the scourge is the mysterious Porco Rosso, a former World War I flying ace who was
+									somehow turned into a pig during the war. As he prepares to battle the pirate crew's American ace, Porco Rosso
+									enlists the help of spunky girl mechanic Fio Piccolo and his longtime friend Madame Gina.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0104652/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Porco_Rosso"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/0019060">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/porco-rosso.4qlj/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/awEC-aLDzjs">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Only Yesterday ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-onlyyesterday.jpg" class="card-img" alt="Only Yesterday poster" />
+					<div class="card__info">
+						<p class="card__title">Only Yesterday</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalOnlyYesterday">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalOnlyYesterday" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Only Yesterday</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> おもひでぽろぽろ<br />
+									<b>Director:</b> Isao Takahata<br />
+									<b>Year:</b> 1991
+								</p>
+								<p>
+									Career woman Taeko Okajima takes her first extended trip outside her native Tokyo when she travels to rural
+									Yamagata to visit her sister's family during the annual safflower harvest. On the train, Taeko daydreams about her
+									pre-adolescent self. As her vacation progresses, she has extended flashbacks about the frustrations and small
+									pleasures of her childhood, and wonders if her stress-filled adult life is what the young Taeko would have wanted
+									for herself.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0102587/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Only_Yesterday"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/80092922">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/only-yesterday.3rkr/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/OfkQlZArxw0">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- From Up on Poppy Hill ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-fromuponpoppyhill.jpg" class="card-img" alt="From Up on Poppy Hill poster" />
+					<div class="card__info">
+						<p class="card__title">From Up on Poppy Hill</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalPoppyHill">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalPoppyHill" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">From Up on Poppy Hill</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> コクリコ坂から<br />
+									<b>Director:</b> Gorō Miyazaki<br />
+									<b>Year:</b> 2011
+								</p>
+								<p>
+									In anticipation of the upcoming Olympic Games, a beloved old clubhouse is set to be demolished to make way for a
+									modern building. As a result, a large part of the student body has banded together, working tirelessly to prevent
+									this from happening. Umi finds herself helping the newspaper club to spread information about this cause where she
+									befriends Shun Kazama, whom she gradually begins to fall in love with. But Shun is an orphan who doesn't know much
+									about his origins, and when the two begin searching for clues to the boy's past, they discover that they may have
+									a lot more in common than either of them could have thought.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt1798188/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/From_up_on_Poppy_Hill"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70262786">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/from-up-on-poppy-hill.pr1q/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/9nzpk_Br6yo">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Castle in the Sky ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-castleinthesky.jpg" class="card-img" alt="Castle in the Sky poster" />
+					<div class="card__info">
+						<p class="card__title">Castle in the Sky</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalCastleSky">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalCastleSky" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Castle in the Sky</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 天空の城ラピュタ<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1986
+								</p>
+								<p>
+									Young orphan Sheeta and her kidnapper, Col. Muska, are flying to a military prison when their plane is attacked by
+									a gang of air pirates led by the matronly Dola. Escaping from a mid-air collision via a magic crystal around her
+									neck, Sheeta meets fellow orphan Pazu and the pair join forces to discover the mystical floating city of Laputa
+									while pursued by both Muska and the pirates, who lust for the city's myriad treasures.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0092067/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Castle_in_the_Sky"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/60027393">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/castle-in-the-sky.zlnm/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/8ykEy-yPBFc">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Nausicaä of the Valley of the Wind ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-nausicaa.jpg" class="card-img" alt="Nausicaä of the Valley of the Wind poster" />
+					<div class="card__info">
+						<p class="card__title">Nausicaä of the Valley of the Wind</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalNausicaa">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalNausicaa" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Nausicaä of the Valley of the Wind</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 風の谷のナウシカ<br />
+									<b>Director:</b> Hayao Miyazaki<br />
+									<b>Year:</b> 1984
+								</p>
+								<p>
+									Far in the future, after an apocalyptic conflict has devastated much of the world's ecosystem, the few surviving
+									humans live in scattered semi-hospitable environments within what has become a "toxic jungle." Young Nausicaä
+									lives in the arid Valley of the Wind and can communicate with the massive insects that populate the dangerous
+									jungle. Under the guidance of the pensive veteran warrior, Lord Yupa, Nausicaä works to bring peace back to the
+									ravaged planet.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0087544/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Nausicaa_of_the_Valley_of_the_Wind"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70019062">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/nausicaae-of-the-valley-of-the-wind.yqmz/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/6zhLBe319KE">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Ocean Waves ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-oceanwaves.jpg" class="card-img" alt="Ocean Waves poster" />
+					<div class="card__info">
+						<p class="card__title">Ocean Waves</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalOceanWaves">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalOceanWaves" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Ocean Waves</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 風の谷のナウシカ<br />
+									<b>Director:</b> Tomomi Mochizuki<br />
+									<b>Year:</b> 1993
+								</p>
+								<p>
+									As he journeys back from Tokyo to his high school for a reunion, Taku Morisaki recounts his memories of his school
+									days, focussing in particular on a love triangle that developed between him and two of his friends.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0108432/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/Ocean_Waves"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/80158668">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/ocean-waves.52m9/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/WvL3zJfAJKg">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- The Cat Returns ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-thecatreturns.jpg" class="card-img" alt="The Cat Returns poster" />
+					<div class="card__info">
+						<p class="card__title">The Cat Returns</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalTheCatReturns">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalTheCatReturns" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">The Cat Returns</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 猫の恩返し<br />
+									<b>Director:</b> Hiroyuki Morita<br />
+									<b>Year:</b> 2002
+								</p>
+								<p>
+									High school student Haru rescues a cat that was about to be run over by a truck and discovers the cat is actually
+									a prince named Lune. Out of gratitude, Lune's father, the Cat King, asks her to marry Lune. Haru is brought to the
+									Cat Kingdom, where she starts to develop feline features. When she is prevented from leaving, the Baron and Toto,
+									two statues that have magically been given life, provide assistance in gaining her freedom.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0347618/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.crunchyroll.com/library/The_Cat_Returns"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70019058">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/the-cat-returns.kw04/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/Gp-H_YOcYTM">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Pom Poko ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-pompoko.jpg" class="card-img" alt="Pom Poko poster" />
+					<div class="card__info">
+						<p class="card__title">Pom Poko</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalPomPoko">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalPomPoko" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Pom Poko</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> 平成狸合戦ぽんぽこ<br />
+									<b>Director:</b> Isao Takahata<br />
+									<b>Year:</b> 1994
+								</p>
+								<p>
+									A secret society consisting of shape-shifting raccoon dogs get together and try their best to save their city
+									after humans encroach their space with development plans.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0347618/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Crunchyroll</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70035036">Netflix</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://9anime.to/watch/pom-poko.6ln0/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/7cowIHjCD4">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- My Neighbors the Yamadas ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-yamadas.jpg" class="card-img" alt="My Neighbors the Yamadas poster" />
+					<div class="card__info">
+						<p class="card__title">My Neighbors the Yamadas</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalNeighborsYamadas">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalNeighborsYamadas" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">My Neighbors the Yamadas</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> ホーホケキョとなりの山田くん<br />
+									<b>Director:</b> Isao Takahata<br />
+									<b>Year:</b> 1999
+								</p>
+								<p>
+									The Yamadas, a middle-class Japanese family, cope with the day-to-day situations that life throws at them while
+									contemplating their individual roles and responsibilities.
+								</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt0206013/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://www.crunchyroll.com/library/Tonari_no_Yamada-kun"
+													>Crunchyroll</a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/70035035">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/my-neighbors-the-yamadas.9oqm/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/1C9ujuCPlnY">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!---------- Earwig and the Witch ------------>
+				<div class="card border-0">
+					<img src="img/home/cards/cards-earwig.jpg" class="card-img" alt="Earwig and the Witch poster" />
+					<div class="card__info">
+						<p class="card__title">Earwig and the Witch</p>
+						<div class="btn-group d-flex">
+							<button type="button" class="card__button rounded-start" data-bs-toggle="modal" data-bs-target="#modalEarwig">
+								Read More</button
+							><button
+								type="button"
+								class="card__button--sm px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Add to watchlist"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-list"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<line x1="9" y1="6" x2="20" y2="6" />
+									<line x1="9" y1="12" x2="20" y2="12" />
+									<line x1="9" y1="18" x2="20" y2="18" />
+									<line x1="5" y1="6" x2="5" y2="6.01" />
+									<line x1="5" y1="12" x2="5" y2="12.01" />
+									<line x1="5" y1="18" x2="5" y2="18.01" />
+								</svg>
+							</button>
+							<button
+								type="button"
+								class="card__button--sm rounded-end px-2"
+								data-bs-toggle="tooltip"
+								data-bs-placement="top"
+								title="Mark watched"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-square"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#fff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalEarwig" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-3">Earwig and the Witch</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<div class="modal-body">
+								<p>
+									<b>Kanji:</b> アーヤと魔女<br />
+									<b>Director:</b> Gorō Miyazaki<br />
+									<b>Year:</b> 2020
+								</p>
+								<p>An orphan girl, Earwig, is adopted by a witch and comes home to a spooky house filled with mystery and magic.</p>
+
+								<div class="btn-group mt-4 d-flex justify-content-center">
+									<a href="https://www.imdb.com/title/tt12441478/" target="_blank"
+										><button type="button" class="modal__button px-3 rounded-start">IMDb</button></a
+									>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Add to watchlist"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-list"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<line x1="9" y1="6" x2="20" y2="6" />
+											<line x1="9" y1="12" x2="20" y2="12" />
+											<line x1="9" y1="18" x2="20" y2="18" />
+											<line x1="5" y1="6" x2="5" y2="6.01" />
+											<line x1="5" y1="12" x2="5" y2="12.01" />
+											<line x1="5" y1="18" x2="5" y2="18.01" />
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="modal__button px-2"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										title="Mark watched"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-square"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#fff"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="4" y="4" width="16" height="16" rx="2" />
+										</svg>
+									</button>
+
+									<div class="dropup">
+										<button
+											type="button"
+											class="modal__button dropdown-toggle px-3 rounded-end"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Watch on
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item disabled" target="_blank" href="#">Crunchyroll</a>
+											</li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://www.netflix.com/watch/81316559">Netflix</a>
+											</li>
+											<li>
+												<a
+													class="dropdown-item"
+													target="_blank"
+													href="https://9anime.to/watch/earwig-and-the-witch.8oqq/ep-full"
+													>9anime</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" target="_blank" href="https://youtu.be/V--UCVHLzAY">Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer
+			class="d-flex flex-wrap flex-column flex-md-row justify-content-center justify-content-md-between align-items-center py-3 my-3 mx-md-5 px-5 border-top"
+		>
+			<div class="d-flex col-md-4 align-items-center">
+				<span class="mb-3 mb-md-0 text-muted">&copy; <span id="copyright-year">2025</span> Peanut Studio Ghibli, Inc</span>
+			</div>
+
+			<ul class="d-flex nav col-md-4 justify-content-end list-unstyled">
+				<li class="ms-3">
+					<a class="text-muted" target="_blank" href="https://twitter.com/ghibliusa"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-brand-twitter"
+							width="29"
+							height="29"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#212529"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+							/></svg
+					></a>
+				</li>
+				<li class="ms-3">
+					<a class="text-muted" target="_blank" href="https://www.instagram.com/ghibliusa"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-brand-instagram"
+							width="30"
+							height="30"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#212529"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<rect x="4" y="4" width="16" height="16" rx="4" />
+							<circle cx="12" cy="12" r="3" />
+							<line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg
+					></a>
+				</li>
+				<li class="ms-3">
+					<a class="text-muted" target="_blank" href="https://www.ghibli.jp/"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-external-link"
+							width="30"
+							height="30"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#212529"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+							<line x1="10" y1="14" x2="20" y2="4" />
+							<polyline points="15 4 20 4 20 9" /></svg
+					></a>
+				</li>
+			</ul>
+		</footer>
+
+		<button onclick="scrollToTop()" class="btn__top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon icon-tabler icon-tabler-chevron-up"
+				width="40"
+				height="40"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="#ffffff"
+				fill="none"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			>
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<polyline points="6 15 12 9 18 15" />
+			</svg>
+		</button>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
